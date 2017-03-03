@@ -1,0 +1,13 @@
+﻿<Window x:Class="TeacherFacilitationSystem.ShowAnnouncementDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShowAnnouncementDetail" Height="300" Width="300">
+
+    <!--<Window.Background>
+        <ImageBrush ImageSource="C:\Users\M.Jahangeer\Desktop\9.jpg"></ImageBrush>
+    </Window.Background>-->
+
+    <Grid>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Center" x:Name="TextBlock" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Height="150" Width="280"/>
+    </Grid>
+</Window>

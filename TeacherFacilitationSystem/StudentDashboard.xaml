@@ -1,0 +1,44 @@
+﻿<Window x:Class="TeacherFacilitationSystem.StudentDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StudentDashboard" Height="480" Width="640">
+
+    <!--<Window.Background>
+        <ImageBrush ImageSource="C:\Users\M.Jahangeer\Desktop\9.jpg"></ImageBrush>
+    </Window.Background>-->
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Label DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="32" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" >Student's Dashboard</Label>
+
+        <Button MaxHeight="100" MinHeight="100" MinWidth="120" MaxWidth="120" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0" Click="Button_Click_StartQuiz" Content="Start Quiz"/>
+        <!--<Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10" Grid.ColumnSpan="3">Start Quiz</Label>-->
+
+        <Button MaxHeight="100" MinHeight="100" MinWidth="120" MaxWidth="120" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top" Click="Button_Click" Content="Profile"/>
+        <!--<Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">Profile</Label>-->
+
+        <Button MaxHeight="100" MinHeight="100" MinWidth="120" MaxWidth="120" Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" VerticalAlignment="Top" Click="Button_Click_Result" Content="Result"/>
+        <!--<Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Grid.ColumnSpan="2" Content="View Announcement"/>-->
+
+        <Button MaxHeight="100" MinHeight="100" MinWidth="120" MaxWidth="120" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Top" Click="Button_Click_ViewAnnouncement" Content="View Announcement"/>
+        <!--<Label Grid.Row="4" Grid.Column="3" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">Result</Label>-->
+
+    </Grid>
+</Window>

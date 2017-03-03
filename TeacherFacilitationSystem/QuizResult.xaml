@@ -1,0 +1,60 @@
+﻿<Window x:Class="TeacherFacilitationSystem.QuizResult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quiz Result" Height="480" Width="640">
+
+    <!--<Window.Background>
+        <ImageBrush ImageSource="C:\Users\M.Jahangeer\Desktop\9.jpg"></ImageBrush>
+    </Window.Background>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="2" HorizontalAlignment="Center" Text="Quiz Result" FontSize="36"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Total Questions "/>
+        <TextBlock Grid.Row="2" Grid.Column="2" x:Name="TotalTextBlock"/>
+        
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Attempted "/>
+        <TextBlock Grid.Row="3" Grid.Column="2" x:Name="AttemtedTextBlock"/>
+        
+        <TextBlock Grid.Row="4" Grid.Column="1" Text="Skipped "/>
+        <TextBlock Grid.Row="4" Grid.Column="2" x:Name="SkippedTextBlock"/>
+        
+        <TextBlock Grid.Row="5" Grid.Column="1" Text="Correct Answers "/>
+        <TextBlock Grid.Row="5" Grid.Column="2" x:Name="CorrectAnswersTextBlock"/>
+        
+        <TextBlock Grid.Row="6" Grid.Column="1" Text="Incorrect Answers "/>
+        <TextBlock Grid.Row="6" Grid.Column="2" x:Name="IncorrectTextBlock"/>
+        
+        <TextBlock Grid.Row="7" Grid.Column="1" Text="Marks "/>
+        <TextBlock Grid.Row="7" Grid.Column="2" x:Name="MarksTextBlock"/>
+        
+        <TextBlock Grid.Row="8" Grid.Column="1" Text="% Correctness "/>
+        <TextBlock Grid.Row="8" Grid.Column="2" x:Name="CorrectnessTextBlock"/>
+        
+    </Grid>
+
+</Window>

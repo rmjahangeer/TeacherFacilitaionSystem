@@ -1,0 +1,63 @@
+﻿<Window x:Class="TeacherFacilitationSystem.AddQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddQuestion" Height="480" Width="640">
+
+    <!--<Window.Background>
+        <ImageBrush ImageSource="C:\Users\M.Jahangeer\Desktop\9.jpg"></ImageBrush>
+    </Window.Background>-->
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.RowSpan="2">Add Question</Label>
+        
+        <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,10,0">Question</Label>
+        <TextBox x:Name="QStatemenTextBox" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4" Grid.RowSpan="2"></TextBox>
+
+        <Label Grid.Row="4" Grid.Column="1" VerticalAlignment="Center">Option A</Label>
+        <TextBox x:Name="OptionATextBox" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="OptionBTextBox" Grid.Row="4" Grid.Column="5" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="OptionCTextBox" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="OptionDTextBox" Grid.Row="5" Grid.Column="5" VerticalAlignment="Center"></TextBox>
+        
+        <Label Grid.Row="4" Grid.Column="4" VerticalAlignment="Center">Option B</Label>
+        
+        <Label Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">Option C</Label>
+        <Label Grid.Row="5" Grid.Column="4" VerticalAlignment="Center">Option D</Label>
+        <Label Grid.Row="6" Grid.Column="2" VerticalAlignment="Center">Correct Option</Label>
+
+        <ComboBox Grid.Row="6" Grid.Column="3" VerticalAlignment="Center" Height="20" x:Name="OptionComboBox">
+            <ComboBoxItem>A</ComboBoxItem>
+            <ComboBoxItem>B</ComboBoxItem>
+            <ComboBoxItem>C</ComboBoxItem>
+            <ComboBoxItem>D</ComboBoxItem>
+        </ComboBox>
+        
+        <Label Grid.Row="7" Grid.Column="1" VerticalAlignment="Center">Add from file</Label>
+        <TextBox Grid.Row="7" Grid.Column="2" VerticalAlignment="Center" x:Name="BrowseTextBox"/>
+        <Button Grid.Row="8" Grid.Column="5" VerticalAlignment="Center" Grid.ColumnSpan="2" MinWidth="120" MaxWidth="120" Content="Add Question" Click="Btn_AddQuestion"/>
+        <Button Content="Browse" Grid.Row="7" Grid.Column="3" MinWidth="60" MaxWidth="70" MinHeight="30" MaxHeight="30" Click="Btn_Browse"/>
+    </Grid>
+</Window>

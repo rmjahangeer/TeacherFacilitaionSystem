@@ -1,0 +1,36 @@
+﻿<Window x:Class="TeacherFacilitationSystem.QuizManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QuizManagement" Height="480" Width="640">
+
+    <!--<Window.Background>
+        <ImageBrush ImageSource="C:\Users\M.Jahangeer\Desktop\9.jpg"></ImageBrush>
+    </Window.Background>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Quiz Management" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+        <Button Grid.Row="1" Grid.Column="0" MaxWidth="100" MaxHeight="70" MinWidth="140" MinHeight="70" Content="Add Quiz" Click="Btn_AddQuiz"/>
+        <Button Grid.Row="1" Grid.Column="2" MaxWidth="150" MaxHeight="70" MinWidth="140" MinHeight="70" Click="Button_Click_1">Delete Quiz</Button>
+        <Button Grid.Row="2" Grid.Column="0" MaxWidth="150" MaxHeight="70" MinWidth="140" MinHeight="70" Click="Button_Click">Update Quiz</Button>
+        <Button Grid.Row="2" Grid.Column="2" MaxWidth="150" MaxHeight="70" MinWidth="140" MinHeight="70" Content="View All Quizes" Click="Btn_ViewAllQuizzez"/>
+
+
+    </Grid>
+
+</Window>
